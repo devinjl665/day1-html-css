@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FinWay - Finance Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!--Navigation Bar-->
+    <nav class="navbar">
+        <div class="nav_container">
+            <div class="logo">
+                <h1>FinWay</h1>
+            </div>
+            <ul class="nav_menu">
+                <li><a href="#dashboard">Dashboard</a></li>
+                <li><a href="#accounts">Accounts</a></li>
+                <li><a href="#transactions">Transactions</a></li>
+                <li><a href="#transfer">Transfer</a></li>
+                <li><a href="#profile">Profile</a></li>
+            </ul>
+            <button class="logout_btn">Logout</button>
+        </div>
+    </nav>
+
+    <!--dashboard-->
+    <main class="container">
+        <!--Account summary-->
+        <section id="dashboard" class="dashboard_section">
+            <h2>Account Overview</h2>
+
+            <div class="accounts_cards">
+                <!--Checking Account Card-->
+                <div class="account_card checking">
+                    <div class="card_header">
+                        <h3>Checking</h3>
+                        <span class="account_number">****1234</span>
+                    </div>
+                    <div class="card_balance">
+                        <p class="balance_label">Available Balance</p>
+                        <p class="balance_amount">12,458.50</p>
+                    </div>
+                    <div class="card_actions">
+                        <button class="transfer_btn">Transfer</button>
+                        <button class="details_btn">Details</button>
+                    </div>
+                </div>
+
+                <!--Savings Account Card-->
+                <div class="account_card savings">
+                    <div class="card_header">
+                        <h3>Savings</h3>
+                        <span class="account_number">****1234</span>
+                    </div>
+                    <div class="card_balance">
+                        <p class="balance_label">Available Balance</p>
+                        <p class="balance_amount">6,348.50</p>
+                    </div>
+                    <div class="card_actions">
+                        <button class="transfer_btn">Transfer</button>
+                        <button class="details_btn">Details</button>
+                    </div>
+                </div>
+
+                <!--Credit Card Card-->
+                <div class="account_card credit">
+                    <div class="card_header">
+                        <h3>Credit</h3>
+                        <span class="account_number">****1235</span>
+                    </div>
+                    <div class="card_balance">
+                        <p class="balance_label">Current Balance</p>
+                        <p class="balance_amount">1,324.00</p>
+                        <p class="balance_label">Available Credit</p>
+                        <p class="balance_amount">176.00</p>
+                    </div>
+                    <div class="card_actions">
+                        <button class="payment_btn">Make a payment</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
